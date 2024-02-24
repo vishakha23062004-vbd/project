@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Enrollment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+
+        .payment-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .payment-options img {
+            height: 40px;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Course Enrollment</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+        </form>
+        <div class="payment-options">
+            <div>
+                <input type="radio" id="phonepe" name="payment" value="phonepe">
+                <label for="phonepe"><img src="https://tse1.mm.bing.net/th?id=OIP.M5yciWi-QQS0tqbRR7PIDAHaEq&pid=Api&P=0&h=180" alt="PhonePe  width="300" height="300""></label>
+            </div>
+            <div>
+                <input type="radio" id="googlepay" name="payment" value="googlepay">
+                
+           
+                <label for="googlepay"><img src="https://tse3.mm.bing.net/th?id=OIP.BQPitHxWZtPlLHKldpQMOgHaHa&pid=Api&P=0&h=180" alt="Google Pay" width="300" height="300"></label>
+
+           
+            </div>
+
+            <div class="form-group">
+                <button type="submit">  <a class="nav-link fw-semibold" href="enrollcomplete.html">Enroll Now</a>  </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
