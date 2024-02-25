@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choose Your Native Language</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+    }
+    h1 {
+        margin-top: 0;
+    }
+    select {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Choose Your Native Language</h1>
+    <select id="languageSelect">
+        <option value="" disabled selected>Select your language</option>
+        <option value="Hindi">Hindi</option>
+        <option value="Bengali">Bengali</option>
+        <option value="Telugu">Telugu</option>
+        <option value="Marathi">Marathi</option>
+        <option value="Tamil">Tamil</option>
+        <option value="Urdu">Urdu</option>
+        <option value="Gujarati">Gujarati</option>
+        <option value="Kannada">Kannada</option>
+        <option value="Odia">Odia</option>
+        <option value="Punjabi">Punjabi</option>
+        <option value="Malayalam">Malayalam</option>
+        <option value="Assamese">Assamese</option>
+        <option value="Maithili">Maithili</option>
+        <option value="Sanskrit">Sanskrit</option>
+        <option value="Santali">Santali</option>
+        <option value="Kashmiri">Kashmiri</option>
+        <option value="Nepali">Nepali</option>
+        <option value="Konkani">Konkani</option>
+        <option value="Sindhi">Sindhi</option>
+    </select>
+    <button onclick="submitLanguage()">Submit</button>
+</div>
+
+<script>
+    function submitLanguage() {
+        var selectedLanguage = document.getElementById("languageSelect").value;
+        if (selectedLanguage) {
+            alert("You have selected " + selectedLanguage + " as your native language.");
+            // You can add further logic here, such as redirecting to another page or processing the selected language.
+        } else {
+            alert("Please select your native language.");
+        }
+    }
+</script>
+</body>
+</html>
